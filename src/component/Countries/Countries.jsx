@@ -25,7 +25,7 @@ const Countries = () => {
 
       <div className="d-grid">
         {countries.map((country) => (
-          <Country name={country.name.common} population={country.population} area={country.area}></Country>
+          <Country name={country.name.common} population={country.population} area={country.area} capital={country.capital}></Country>
         ))}
       </div>
     </div>
