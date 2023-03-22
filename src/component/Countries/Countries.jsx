@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Country from "../Country/Country";
+
 import "./Countries.css";
 
 const Countries = () => {
   //  Step:1
   const [countries, setCountries] = useState([]);
-  console.log("line 8:", countries);
+  // console.log("line 8:", countries);
   //   Step:2
   useEffect(() => {
     // Step:3
@@ -25,7 +26,7 @@ const Countries = () => {
 
       <div className="d-grid">
         {countries.map((country) => (
-          <Country name={country.name.common} population={country.population} area={country.area} capital={country.capital}></Country>
+          <Country country={country}></Country>
         ))}
       </div>
     </div>
