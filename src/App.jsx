@@ -1,17 +1,10 @@
-
 import "./App.css";
 import Countries from "./component/Countries/Countries";
-import Footer from "./component/Footer/Footer";
-import Header from "./component/Header/Header";
-import Person from "./component/Person/Person";
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
       <Countries></Countries>
-      <Person></Person>
-      <Footer></Footer>
     </div>
   );
 }
