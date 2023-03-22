@@ -26,7 +26,7 @@ const Countries = () => {
 
       <div className="d-grid">
         {countries.map((country) => (
-          <Country country={country}></Country>
+          <Country country={country} key={country.cca3}></Country> //key unique id
         ))}
       </div>
     </div>
