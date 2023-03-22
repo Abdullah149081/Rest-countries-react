@@ -21,7 +21,7 @@ const Countries = () => {
 
   return (
     <div>
-      <h1>Welcome To World Country Name</h1>
+      <h1 className="text-primary">Welcome To World Country Name</h1>
       <h2 style={{ color: "tomato", fontWeight: "bold" }}>Total Country: {countries.length}</h2>
 
       <div className="d-grid">
