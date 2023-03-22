@@ -1,15 +1,23 @@
-import { useEffect, useState } from "react";
+
 import "./App.css";
+import Countries from "./component/Countries/Countries";
+import Footer from "./component/Footer/Footer";
+import Header from "./component/Header/Header";
+import Person from "./component/Person/Person";
 
 function App() {
   return (
     <div className="App">
-      <LoadCountries></LoadCountries>
+      <Header></Header>
+      <Countries></Countries>
+      <Person></Person>
+      <Footer></Footer>
     </div>
   );
 }
-
+/* 
 function LoadCountries() {
+  let number = 1;
   // step:1
   const [countries, setCountries] = useState([]);
   // step:2
@@ -28,8 +36,19 @@ function LoadCountries() {
     <div>
       <h1>Visiting Every Country</h1>
       <h2>Available Country :{countries.length}</h2>
+      {countries.map((country) => (
+        <Country name={country.name.common}></Country>
+      ))}
     </div>
   );
 }
 
+function Country(props) {
+  return (
+    <div>
+      <h2>Country Name :{props.name}</h2>
+    </div>
+  );
+}
+ */
 export default App;
